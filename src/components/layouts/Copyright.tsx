@@ -63,26 +63,13 @@ const Copyright: React.FC = () => {
         >
           <div className="i-mdi-cloud text-sm mx-1" />
         </a>
-        <a href={pkg.author.url} target="_blank" rel="noreferrer">
-          云游君 @{pkg.author.name}
+        <a target="_blank" rel="noreferrer">
+          小黄鸡
         </a>
       </div>
       <p>
         {`2019 - ${new Date().getFullYear()}`}
       </p>
-      <div className="text-center">
-        {socialList.map(item => (
-          <Tooltip title={item.label} arrow key={item.type}>
-            <IconButton
-              sx={{ color: item.color }}
-              href={item.href}
-              target="_blank"
-            >
-              <div className={`${item.icon} text-lg`} />
-            </IconButton>
-          </Tooltip>
-        ))}
-      </div>
     </div>
   )
 }

@@ -19,6 +19,8 @@ const Home: React.FC = () => {
 
   useDetectStorage()
 
+  const audio1 = new Audio('/assets/audio/shuo.mp3');
+
   /**
    * 根据模式返回对应的色温
    * @returns
@@ -34,7 +36,7 @@ const Home: React.FC = () => {
     <div className={`max-w-600px m-auto ${getClassByMode()}`}>
       <div className="pt-6">
         <h1 className="text-center text-3xl">
-          便携小空调
+          红贵人的寝宫
         </h1>
         <ProTip />
         <AirConditioner
@@ -47,7 +49,7 @@ const Home: React.FC = () => {
             <Button
               variant="outlined"
               onClick={() => {
-                window.open('/rc', '_blank', 'width=300, height=400')
+                audio1.play();
               }}
             >
               独立遥控器

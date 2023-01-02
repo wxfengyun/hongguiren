@@ -156,8 +156,6 @@ const AirConditioner: React.FC<{
         <AcLogo />
         <AirOutlet />
         <AcStatus status={props.status} />
-        <EnergyLabel titleLength={6} />
-        {import.meta.env.VITE_DISABLE_ADSENSE ? null : <EnergySavingLabel />}
       </AcBorder>
       <Fade in={props.status} timeout={{ enter: 2500, exit: 1500 }}>
         <WindEffect />
