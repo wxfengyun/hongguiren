@@ -20,6 +20,7 @@ const Home: React.FC = () => {
   useDetectStorage()
 
   const audio1 = new Audio('/assets/audio/shuo.mp3');
+  const audio2 = new Audio('/assets/audio/xindong.mp3');
 
   /**
    * 根据模式返回对应的色温
@@ -50,9 +51,10 @@ const Home: React.FC = () => {
               variant="outlined"
               onClick={() => {
                 audio1.play();
+                audio2.play();
               }}
             >
-              独立遥控器
+              听小黄鸡唱歌
             </Button>
           </div>
         </div>
