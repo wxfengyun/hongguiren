@@ -30,7 +30,7 @@ const ProTip: FC = () => {
       className="m-6 text-center flex justify-center items-center"
     >
       <div className="i-ic:outline-emoji-objects text-xl cursor-pointer" style={{ color: '#f3a83b' }} onClick={toggleDark}></div>
-      新年快乐，万事如意~
+      愿你余生节假期~
     </div>
   )
 }
