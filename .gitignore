@@ -34,6 +34,4 @@ yarn-error.log*
 # jetbrains
 .idea
 
-dist
-dist-ssr
 *.local
