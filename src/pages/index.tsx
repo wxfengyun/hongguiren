@@ -37,7 +37,7 @@ const Home: React.FC = () => {
     <div className={`max-w-600px m-auto ${getClassByMode()}`}>
       <div className="pt-6">
         <h1 className="text-center text-3xl">
-          红贵人的寝宫
+          卖鱼桥演播室
         </h1>
         <ProTip />
         <AirConditioner
@@ -54,7 +54,7 @@ const Home: React.FC = () => {
                 audio2.play();
               }}
             >
-              听小黄鸡唱歌
+              听西子唱歌
             </Button>
           </div>
         </div>
